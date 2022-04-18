@@ -49,7 +49,7 @@ const handler = async event => {
 
 		const writeReq = await sheets.spreadsheets.values.append({
 			spreadsheetId: event.queryStringParameters.id,
-			range: 'Sheet1!A:D',
+			range: 'Sheet1!A:B',
 
 			valueInputOption: 'USER_ENTERED',
 			resource: {
